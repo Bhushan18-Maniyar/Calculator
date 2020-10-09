@@ -127,6 +127,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnDot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                number.setText(number.getText() + ".");
+            }
+        });
+
 
         btnBackSpace.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -262,7 +269,6 @@ public class MainActivity extends AppCompatActivity {
                             percentage = false;
                         }
                     }
-
                 }
             }
         });
