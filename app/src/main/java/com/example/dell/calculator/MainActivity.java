@@ -228,28 +228,39 @@ public class MainActivity extends AppCompatActivity {
                     num2 = number.getText().toString();
                     temp.setText(temp.getText() + num2);
                     if (plus) {
-                        number.setText(Double.parseDouble(num1) + Double.parseDouble(num2) + "");
-                        plus = false;
+                        if (!num1.equals("") && !num2.equals("")) {
+                            number.setText(Double.parseDouble(num1) + Double.parseDouble(num2) + "");
+                            plus = false;
+                        }
+
                     }
 
-                    if(minus){
-                        number.setText(Double.parseDouble(num1) - Double.parseDouble(num2) + "");
-                        minus = false;
+                    if (minus) {
+                        if (!num1.equals("") && !num2.equals("")) {
+                            number.setText(Double.parseDouble(num1) - Double.parseDouble(num2) + "");
+                            minus = false;
+                        }
                     }
 
-                    if(mul){
-                        number.setText(Double.parseDouble(num1) * Double.parseDouble(num2) + "");
-                        mul = false;
+                    if (mul) {
+                        if (!num1.equals("") && !num2.equals("")) {
+                            number.setText(Double.parseDouble(num1) * Double.parseDouble(num2) + "");
+                            mul = false;
+                        }
                     }
 
-                    if (division){
-                        number.setText(Double.parseDouble(num1) / Double.parseDouble(num2) + "");
-                        division = false;
+                    if (division) {
+                        if (!num1.equals("") && !num2.equals("")) {
+                            number.setText(Double.parseDouble(num1) / Double.parseDouble(num2) + "");
+                            division = false;
+                        }
                     }
 
-                    if (percentage){
-                        number.setText(Double.parseDouble(num1) % Double.parseDouble(num2) + "");
-                        percentage = false;
+                    if (percentage) {
+                        if (!num1.equals("") && !num2.equals("")) {
+                            number.setText(Double.parseDouble(num1) % Double.parseDouble(num2) + "");
+                            percentage = false;
+                        }
                     }
 
                 }
